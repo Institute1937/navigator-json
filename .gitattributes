@@ -1,0 +1,4 @@
+package-lock.json filter=lfs diff=lfs merge=lfs -text
+package.json filter=lfs diff=lfs merge=lfs -text
+src/js/email-data.json filter=lfs diff=lfs merge=lfs -text
+src/js/email-data-short.json filter=lfs diff=lfs merge=lfs -text

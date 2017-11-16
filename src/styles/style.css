@@ -1,0 +1,179 @@
+    html {
+      box-sizing: border-box;
+      background:black;
+      font-family:'courier new';
+      font-size: 20px;
+      font-weight: 200;
+      color: seagreen;
+    }
+
+    body {
+      background-image: url('grey-sea_40.jpg');
+      background-repeat: no-repeat; 
+      background-attachment: fixed;  
+      margin: 0;
+    }
+
+    *, *:before, *:after {
+      box-sizing: inherit;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      cursor: text;
+    }
+    
+    div {
+      /*border: 1px solid red;*/
+      padding: 5px;
+    }
+
+    .email-browser {
+      display: flex; /*not actually using flex anymore but might reintroduce it...*/
+      flex-direction: row;
+      align-content: flex-start;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding-top: 20px;
+    }
+
+    .years {
+      margin: 60px 10px;
+      max-width: 60px;
+      flex-direction: column;
+      padding: 0;
+      font-family: courier;
+      text-align: right;
+      color: rgb(200, 200, 200);
+    }
+
+    .year-all.header {
+      font-weight: bold;
+      padding: 5px;
+    }
+
+    .year {
+      padding: 5px;
+    }
+
+    .years .selected {
+      color: rgb(230, 230, 230);
+    }
+
+    .months {
+      margin: 60px 40px 60px 20px;
+      max-width: 60px;
+      flex-direction: column;
+      padding: 0;
+      font-family: courier;
+      color: rgb(200, 200, 200);
+    }
+
+    .month-all.header {
+      font-weight: bold;
+      padding: 5px;
+    }
+
+    .months .selected {
+      color: rgb(230, 230, 230);
+    }
+
+    .month {
+      padding: 5px;
+    }
+
+    .navigation {
+      width: 300px;
+      flex-direction: column;
+    }
+
+    .search-form {
+      margin:50px 5px;
+      
+    }
+
+    .reader {
+      flex: 7;
+      align-content: flex-start;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .email-header {
+      margin: 60px 0 0px 30px;
+      /*border-bottom: 2px solid seagreen;*/
+      flex-direction: column;
+      align-content: left;
+      padding: 5px 5px 20px 5px;
+    }
+
+    .email-body {
+      margin: 20px 50px 50px 30px;
+      flex-direction: column;
+      font-size: 14px;
+      color: rgb(20, 61, 38);
+    }
+
+    input.search {
+      margin: 0;
+      text-align: left;
+      outline:0;
+      border: 5px solid rgba(0, 0, 0, 0.8);
+      border-radius: 5px;
+      width: 100%;
+      position: relative;
+      top: 10px;
+      z-index: 2;
+      font-size: 24px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.19);
+    }
+
+    input {
+      background-color: black;
+      color: rgb(200, 200, 200);
+      font-family: courier;
+    }
+
+    .suggestions {
+      margin: 0;
+      padding: 0 0 5px 0;
+      position: relative;
+      font-size: 16px;
+      background:rgba(0, 0, 0, 0.8);
+      border-radius: 5px;
+      /*perspective:20px;*/
+    }
+    .suggestions li {
+      list-style: none;
+      border-bottom: 3px solid rgb(13, 29, 14);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.14);
+      margin:0;
+      padding:10px;
+      transition:background 0.2s;
+      display:block;
+      justify-content:space-between;
+      text-transform: capitalize;
+      flex-direction: row;
+    }
+
+    .hl {
+      background: rgba(207, 226, 33, 0.274);
+    }
+
+    .sender {
+      font-weight: bold;
+    }
+
+    li {
+      list-style: none;
+      padding-bottom: 5px;
+    }
+
+    .email-mini {
+      word-wrap: break-word;
+    }
+
+    .email-mini.selected {
+      color: rgb(73, 221, 137);
+      background-color: black;
+    }
